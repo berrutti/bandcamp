@@ -1,6 +1,8 @@
 # Bandcamp Player Utility
 A Bandcamp music player for music lovers
 
+![Screenshot](images/screenshot.png)
+
 ## Overview
 This utility enhances the Bandcamp music listening experience by providing a user-friendly player that remains fixed at the bottom of the screen. Unlike the default Bandcamp player, which can be cumbersome to navigate, our utility offers several advantages:
 
@@ -12,7 +14,8 @@ This utility enhances the Bandcamp music listening experience by providing a use
 
 ## How to Use
 
-Installation: Simply include the provided script or link in your Bandcamp page.
+Installation: Simply include the provided script or link in your Bandcamp page. There are two ways of using it, either as a Arc browser "Boost", or as a "Bookmarklet". Just copy and paste the code from one of those files into your favorite browser and start using it.
+
 Enjoy: Start listening to your favorite tracks with improved control and convenience.
 
 ## Feedback and Contributions
