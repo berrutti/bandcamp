@@ -14,7 +14,7 @@ This utility enhances the Bandcamp music listening experience by providing a use
 
 ## How to Use
 
-Installation: Simply include the provided script or link in your Bandcamp page. There are two ways of using it, either as a Arc browser "Boost", or as a "Bookmarklet". Just copy and paste the code from one of those files into your favorite browser and start using it.
+Installation: There are two ways of using this piece of code, either as a Arc browser "[Boost](https://arcboosts.com/boosts)", or as a "[Bookmarklet](https://www.freecodecamp.org/news/what-are-bookmarklets/)". Just copy and paste the code from one of those files into your favorite browser and start using it.
 
 Enjoy: Start listening to your favorite tracks with improved control and convenience.
 
