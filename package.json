@@ -1,9 +1,9 @@
 {
   "name": "bandcamp-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
-    "build": "tsx scripts/build.ts && esbuild src/content.ts --bundle --outfile=extension/content.js --platform=browser && esbuild src/content.ts --bundle --format=iife --platform=browser | (printf 'javascript:'; cat) > bookmarklet.js",
+    "build": "esbuild src/content.ts --bundle --outfile=extension/content.js --platform=browser && esbuild src/content.ts --bundle --format=iife --platform=browser | (printf 'javascript:'; cat) > bookmarklet.js",
     "release": "yarn build && yarn version && git push --follow-tags"
   },
   "devDependencies": {
