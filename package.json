@@ -1,13 +1,14 @@
 {
-  "name": "bandcamp-player",
+  "name": "bandcamp-utils",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild src/content.ts --bundle --outfile=extension/content.js --platform=browser && esbuild src/content.ts --bundle --format=iife --platform=browser | (printf 'javascript:'; cat) > bookmarklet.js",
+    "build": "tsx scripts/build.ts && esbuild src/content.ts --bundle --outfile=extension/content.js --platform=browser && esbuild src/content.ts --bundle --format=iife --platform=browser | (printf 'javascript:'; cat) > bookmarklet.js",
     "release": "yarn build && yarn version && git push --follow-tags"
   },
   "devDependencies": {
     "esbuild": "^0.25.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.0.0"
   }
 }

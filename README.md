@@ -1,5 +1,5 @@
-# Bandcamp Player Utility
-A Bandcamp music player for music lovers
+# Bandcamp Utils
+Utils for Bandcamp: a better player and an experimental click-to-add-to-cart feature.
 
 ![Screenshot](images/screenshot.png)
 
@@ -11,7 +11,7 @@ This utility enhances the Bandcamp music listening experience by providing a use
 - Enhanced Controls: Our player allows for seamless control over playback, including precise jumping to any point in the song with a single click (No need to drag and drop).
 - Always Visible: The player remains visible at the bottom of the page, similar to popular music streaming platforms like Spotify.
 - Convenient Navigation: Quickly move between songs with intuitive previous and next buttons.
-- One-click Add to Cart: On album pages, "buy track" links are replaced with a price label and a 🛒 button. On track pages, the 🛒 button in the player opens the buy dialog pre-filled with the minimum price and clicks "Add to cart" for you — no page navigation required.
+- One-click Add to Cart: On album pages, "buy track" links are replaced with a price label and a 🛒 button. On track pages, the 🛒 button in the player opens the buy dialog pre-filled with the minimum price and clicks "Add to cart" for you - no page navigation required.
 
 ## How to Use
 
@@ -19,14 +19,14 @@ There are two ways to use this:
 
 ### Chrome Extension (recommended)
 
-**Option A — Download from releases (no setup required):**
-1. Download `bandcamp-player.zip` from the [latest release](../../releases/latest).
+**Option A: Download from releases (no setup required):**
+1. Download `bandcamp-utils.zip` from the [latest release](../../releases/latest).
 2. Unzip it.
 3. Open `chrome://extensions` in Chrome.
 4. Enable **Developer mode** (toggle in the top-right corner).
 5. Click **Load unpacked** and select the unzipped `extension/` folder.
 
-**Option B — Clone and build:**
+**Option B: Clone and build:**
 1. Clone this repo and run `yarn install && yarn build`.
 2. Open `chrome://extensions` in Chrome.
 3. Enable **Developer mode** (toggle in the top-right corner).

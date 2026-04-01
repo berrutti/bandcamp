@@ -113,7 +113,7 @@ const addToCart = async (itemId: number, bandId: number, price: number): Promise
   });
   const json = await res.json() as { error?: string; resync?: boolean; sync_num?: number };
   if (json.error) throw new Error(json.error);
-  if (json.resync) throw new Error("cart resync — try again");
+  if (json.resync) throw new Error("cart resync, try again");
   if (json.sync_num != null) updateCartSyncNum(json.sync_num);
 };
 

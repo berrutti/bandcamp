@@ -1,12 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Bandcamp Player",
-  "version": "1.0",
-  "description": "Better player controls and one-click add-to-cart for Bandcamp.",
+  "name": "Bandcamp Utils",
+  "version": "1.0.0",
+  "description": "Utils for Bandcamp: a better player and an experimental click-to-add-to-cart feature.",
   "content_scripts": [
     {
-      "matches": ["*://*.bandcamp.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "*://*.bandcamp.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_end"
     }
   ]

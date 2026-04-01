@@ -20,9 +20,9 @@ jobs:
       - run: yarn build
 
       - name: Zip extension
-        run: zip -r bandcamp-player.zip extension/
+        run: zip -r bandcamp-utils.zip extension/
 
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: bandcamp-player.zip
+          files: bandcamp-utils.zip

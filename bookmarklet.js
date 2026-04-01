@@ -77,7 +77,7 @@ javascript:"use strict";
     });
     const json = await res.json();
     if (json.error) throw new Error(json.error);
-    if (json.resync) throw new Error("cart resync \u2014 try again");
+    if (json.resync) throw new Error("cart resync, try again");
     if (json.sync_num != null) updateCartSyncNum(json.sync_num);
   };
   var replaceBuyLinks = () => {
