@@ -1,0 +1,28 @@
+name: Release Extension
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: yarn install --frozen-lockfile
+
+      - run: yarn build
+
+      - name: Zip extension
+        run: zip -r bandcamp-player.zip extension/
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: bandcamp-player.zip

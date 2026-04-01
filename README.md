@@ -11,12 +11,31 @@ This utility enhances the Bandcamp music listening experience by providing a use
 - Enhanced Controls: Our player allows for seamless control over playback, including precise jumping to any point in the song with a single click (No need to drag and drop).
 - Always Visible: The player remains visible at the bottom of the page, similar to popular music streaming platforms like Spotify.
 - Convenient Navigation: Quickly move between songs with intuitive previous and next buttons.
+- One-click Add to Cart: On album pages, "buy track" links are replaced with a price label and a 🛒 button. On track pages, the 🛒 button in the player opens the buy dialog pre-filled with the minimum price and clicks "Add to cart" for you — no page navigation required.
 
 ## How to Use
 
-Installation: There are two ways of using this piece of code, either as a Arc browser "[Boost](https://arcboosts.com/boosts)", or as a "[Bookmarklet](https://www.freecodecamp.org/news/what-are-bookmarklets/)". Just copy and paste the code from one of those files into your favorite browser and start using it.
+There are two ways to use this:
 
-Enjoy: Start listening to your favorite tracks with improved control and convenience.
+### Chrome Extension (recommended)
+
+**Option A — Download from releases (no setup required):**
+1. Download `bandcamp-player.zip` from the [latest release](../../releases/latest).
+2. Unzip it.
+3. Open `chrome://extensions` in Chrome.
+4. Enable **Developer mode** (toggle in the top-right corner).
+5. Click **Load unpacked** and select the unzipped `extension/` folder.
+
+**Option B — Clone and build:**
+1. Clone this repo and run `yarn install && yarn build`.
+2. Open `chrome://extensions` in Chrome.
+3. Enable **Developer mode** (toggle in the top-right corner).
+4. Click **Load unpacked** and select the `extension/` folder.
+
+The extension runs automatically on every `*.bandcamp.com` page. To iterate, edit `src/content.ts`, run `yarn build`, click the reload icon on the extension, and refresh the Bandcamp tab.
+
+### Bookmarklet
+Copy the contents of `bookmarklet.js` and paste it into the URL field of a new browser bookmark. Click the bookmark on any Bandcamp page to activate it.
 
 ## Feedback and Contributions
 We welcome feedback and contributions from the community to further enhance this utility. Feel free to submit issues, feature requests, or pull requests via GitHub.
